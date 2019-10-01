@@ -1,0 +1,13 @@
+{
+  "name": "ecommerceberlin-site",
+  "alias": "new.ehandel.com.pl",
+  "type": "npm",
+  "public": false,
+  "version": 2,
+  "build" : {
+    "env" : {
+      "test" : "srest"
+    }
+  },
+  "dotenv": false
+}
