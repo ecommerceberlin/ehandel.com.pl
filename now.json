@@ -1,5 +1,5 @@
 {
-  "name": "ecommerceberlin-site",
+  "name": "evenjuicer-portal",
   "alias": "new.ehandel.com.pl",
   "type": "npm",
   "public": false,
@@ -9,5 +9,11 @@
       "test" : "srest"
     }
   },
-  "dotenv": false
+  "dotenv": false,
+  "routes": [
+    {
+      "src": "/(?<slug>[a-z\\-]+),(?<id>[0-9]+)",
+      "dest" : "post?id=$id"
+    }
+  ]
 }
