@@ -30,7 +30,7 @@
   "dependencies": {
     "dotenv-webpack": "^1.5.7",
     "eventjuicer-site-components": "^1.4.4",
-    "next": "^9.0.7",
+    "next": "^9.3.2",
     "now": "^16.3.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
