@@ -1,77 +1,22 @@
 import {
     connect,
-    WidgetVideoWithEventInfo,
-    WidgetVisitor,
-    WidgetFeaturedCompanies,
-    WidgetAllExhibitorsColumnList,
-    WidgetRoleButtons,
-    WidgetSalesMap,
+    Wrapper,
     reduxWrapper,
-    configure,
-    WidgetFeaturedPresenters
+    configure
   } from 'eventjuicer-site-components';
   
-  // import FeaturedExhibitors from '../src/FeaturedExhibitors';
-  //import FeaturedPresenters from '../src/FeaturedPresenters';
   
   import settings from '../settings'
   
-  
   const PageIndex = (props) => (
   
-     
+   
     <React.Fragment>
   
-    <WidgetVideoWithEventInfo />
-
-     {/* <WidgetSalesMap
-      label="exhibitors.map.title"
-      // secondaryLabel="exhibitors.map.opensales"
-      // first
-    /> */}
+  <Wrapper first>
   
-    {/* <WidgetSchedule /> */}
-
-    {/* <WidgetFeaturedPresenters /> */}
-  
-    {/* <WidgetVisitor
-      label="visitors.register"
-      secondaryLabel="event.parties"
-    /> */}
-  
-    <WidgetFeaturedCompanies />
-  
-    {/* <WidgetSalesMap
-      label="exhibitors.map.title2"
-      secondaryLabel="exhibitors.map.opensales"
-    /> */}
-  
-    {/* <WidgetPresentersAll /> */}
-  
-    {/* <WidgetRoleButtons first={true} /> */}
-  
-    {/* <FeaturedExhibitors /> */}
-  
-    {/* <WidgetVisitor
-      label="visitors.register_alt"
-      secondaryLabel="event.parties"
-    /> */}
-  
-    {/* <WidgetVideoWithReviews overlay="black" /> */}
-  
-    <WidgetAllExhibitorsColumnList />
-  
-    {/* <FsVideo
-      background="https://res.cloudinary.com/eventjuicer/image/upload/v1534553598/poster_stage1.jpg"
-      videoSrc="https://res.cloudinary.com/eventjuicer/video/upload/v1534553583/video_stage1.mp4"
-    /> */}
-  
-    {/* <WidgetVisitor
-      label="visitors.register"
-      secondaryLabel="event.parties"
-    /> */}
-  
-   
+    Posts here
+  </Wrapper>
    
     </React.Fragment>
    
@@ -81,12 +26,12 @@ import {
   
     await configure(store, {
       settings: settings,
-      preload: ['allexhibitors', 'companies', 'presenters']
+      preload: ['posts?featured=1']
     })
 
     return {props: {
       
-    }, revalidate: 10}
+    }, revalidate: 3}
     
   })
   
