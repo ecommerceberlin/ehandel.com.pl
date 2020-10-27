@@ -2,7 +2,8 @@ import {
     connect,
     Wrapper,
     reduxWrapper,
-    configure
+    configure,
+    WidgetPosts
   } from 'eventjuicer-site-components';
   
   
@@ -15,7 +16,8 @@ import {
   
   <Wrapper first>
   
-    Posts here
+<WidgetPosts />
+
   </Wrapper>
    
     </React.Fragment>
@@ -26,7 +28,12 @@ import {
   
     await configure(store, {
       settings: settings,
-      preload: ['posts?featured=1']
+      preload: [{
+        resource: "posts",
+        params: {
+          company_id: 1216
+        }
+      }]
     })
 
     return {props: {
