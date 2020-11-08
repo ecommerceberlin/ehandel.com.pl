@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/ecommerceberlin/ehandel.com.pl#readme",
   "dependencies": {
-    "eventjuicer-site-components": "2.4.8",
-    "next": "^9.5.5",
-    "now": "^19.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "eventjuicer-site-components": "2.6.11",
+    "next": "^10.0.1",
+    "vercel": "^20.1.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-icons": "^3.10.0"
   },
   "devDependencies": {},
