@@ -3,22 +3,17 @@ import {
     connect,
     configure,
     reduxWrapper,
-    Wrapper
+    Wrapper,
+    WidgetPost
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
 
   import settings from '../settings';
 
-  const PageCompany = ({slug, dispatch}) => {
+  const PageCompany = ({id}) => {
     
-  return (
-    <Wrapper first>
-
-     
-     dsdfsdf
-    </Wrapper>
-  );
+    return ( <WidgetPost id={id} /> );
   
   }
   

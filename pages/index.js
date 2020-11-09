@@ -6,23 +6,11 @@ import {
     WidgetPosts
   } from 'eventjuicer-site-components';
   
-  
   import settings from '../settings'
   
-  const PageIndex = (props) => (
-  
-   
-    <React.Fragment>
-  
-  <Wrapper first>
-  
-<WidgetPosts />
-
-  </Wrapper>
-   
-    </React.Fragment>
-   
-  ) 
+  const PageIndex = (props) => (<Wrapper first>
+  <WidgetPosts />
+  </Wrapper>) 
   
   export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
   
@@ -36,9 +24,7 @@ import {
       }]
     })
 
-    return {props: {
-      
-    }, revalidate: 3}
+    return {props: {}, revalidate: 1}
     
   })
   
