@@ -4,6 +4,12 @@ import Head from 'next/head'
 
 const customTheme = {
 
+    palette: {
+        background: {
+          default: "#f0f2f5" //#f7f8fc
+        }
+    },
+
     typography: {
   
       fontFamily: "'Roboto', 'Arial', sans-serif",
@@ -28,23 +34,9 @@ const customTheme = {
         fontFamily: "'Titillium Web', 'Arial', sans-serif",
         fontWeight : 400
       },
-  
-      // headline : {
-      //   fontFamily: "'Montserrat', 'Helvetica', 'Arial', sans-serif",
-      // },
-      // subheading : {
-      //   fontFamily: "'Montserrat', 'Helvetica', 'Arial', sans-serif",
-      //   fontWeight : 700
-      // },
-      // title: {
-      //   fontFamily: "'Montserrat', 'Helvetica', 'Arial', sans-serif"
-      // }
-    },
-    // palette: {
-    //   primary: { main: red[700] },
-    //   secondary: { main: grey[700] }
-    // }
-  };
+    }
+    
+};
   
   /**
    * 
