@@ -23,6 +23,7 @@ import {
       <WidgetPosts />
     }
     right={
+      
       <WidgetPublishers />
     }
     leftSize={7}

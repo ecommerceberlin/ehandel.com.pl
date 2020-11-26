@@ -13,7 +13,7 @@ import {
   const PageCompany = ({slug, dispatch}) => {
     
   return (
-    <Wrapper first>
+    <Wrapper first color="transparent">
 
      
      dsdfsdf

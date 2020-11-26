@@ -149,6 +149,8 @@ const settings =  {
     },
 
     footer : {
+        backgroundColor: "#ffffff",
+        showEventInfo: false,
         iconStyle : "black",
         links : [
             // {label: "exhibitors.agreement.title", href : "/legal-20200324"},
