@@ -38,12 +38,7 @@ import {
   
     await configure(store, {
       settings: settings,
-      preload: [{
-        resource: "posts",
-        params: {
-          company_id: 1216
-        }
-      }]
+      preload: ["posts"]
     })
 
     return {props: {}, revalidate: 1}
