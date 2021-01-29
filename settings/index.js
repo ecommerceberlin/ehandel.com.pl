@@ -2,7 +2,7 @@ const settings =  {
     
     system : {
 
-        // maintenance: true,
+         maintenance: true,
 
         lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&key=R_9v_VaDNTKxZwL_GALhXdy_r9APBSUJ',
         available_locales : ["pl"],
