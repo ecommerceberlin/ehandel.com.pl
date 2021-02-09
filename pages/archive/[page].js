@@ -3,20 +3,19 @@ import {
     connect,
     configure,
     reduxWrapper,
-    Wrapper
+    Wrapper,
+    WidgetPosts
   } from 'eventjuicer-site-components';
   
   import Head from 'next/head'
 
   import settings from '../../settings';
 
-  const PageCompany = ({slug, dispatch}) => {
+  const PageCompany = ({page}) => {
     
   return (
     <Wrapper first color="transparent">
-
-     
-     dsdfsdf
+      <WidgetPosts page={page} />
     </Wrapper>
   );
   
@@ -40,19 +39,18 @@ import {
   
   export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
   
-    const {slug} = params;
- 
-
+    const {page} = params;
+  
     await configure(store, {
       settings : settings,
-    //   preload : [post]
+      preload : [`posts?page=${page}`]
     })
 
     return {
         props : {
-            // id :id
+            page: page
         },
-        revalidate : 1
+        revalidate : 5
     }
   
   })

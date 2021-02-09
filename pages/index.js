@@ -1,49 +1,48 @@
 import {
-    connect,
-    Wrapper,
-    reduxWrapper,
-    configure,
-    WidgetPosts,
-    TwoColsLayout as Section,
-    WidgetPostsFeatured,
-    WidgetPublishers
-  } from 'eventjuicer-site-components';
-  
-  import settings from '../settings'
-  
-  const PageIndex = (props) => (
-  <>
-  
-  <Wrapper first color="transparent">
+  connect,
+  Wrapper,
+  reduxWrapper,
+  configure,
+  WidgetPosts,
+  TwoColsLayout as Section,
+  WidgetPostsFeatured,
+  WidgetPublishers
+} from 'eventjuicer-site-components';
 
-     <WidgetPostsFeatured />
+import settings from '../settings'
 
-      <Section
-    left={
-      <WidgetPosts />
-    }
-    right={
-      
-      <WidgetPublishers />
-    }
-    leftSize={7}
-  />
+const PageIndex = (props) => (
+<>
 
-  </Wrapper>
+<Wrapper first color="transparent">
 
-  </>
-  ) 
-  
-  export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
-  
-    await configure(store, {
-      settings: settings,
-      preload: ["posts"]
-    })
+   <WidgetPostsFeatured />
 
-    return {props: {}, revalidate: 1}
+    <Section
+  left={
+    <WidgetPosts />
+  }
+  right={
     
+    <WidgetPublishers />
+  }
+  leftSize={7}
+/>
+
+</Wrapper>
+
+</>
+) 
+
+export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
+  
+  await configure(props, {
+    settings: settings,
+    preload: ["posts?page=1"]
   })
+
+  return {props: {}, revalidate: 1}
   
-  export default connect()(PageIndex);
-  
+})
+
+export default connect()(PageIndex);
