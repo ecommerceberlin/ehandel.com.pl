@@ -8,9 +8,9 @@ module.exports = withTM({
 
       return config 
     },
-    // i18n: {
-    //   locales: ['pl'],
-    //   defaultLocale: 'pl',
-    //   localeDetection: false
-    // },
+    i18n: {
+      locales: ['pl'],
+      defaultLocale: 'pl',
+      localeDetection: false
+    },
 });
