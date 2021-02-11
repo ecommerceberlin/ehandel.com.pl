@@ -11,11 +11,11 @@ import Head from 'next/head'
 
 import settings from '../../settings';
 
-const PageCompany = ({slug}) => {
+const PageCompany = ({company}) => {
   
 return (
   <Wrapper first color="transparent">
-    <WidgetPosts company={slug} label="posts.company" />
+    <WidgetPosts company={company} label="posts.company" />
   </Wrapper>
 );
 
@@ -39,16 +39,21 @@ export async function getStaticPaths() {
 
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
-  const {slug} = props.params;
+  const {company} = props.params;
 
   await configure(props, {
     settings : settings,
-    preload : [`posts?company=${slug}`]
+    preload : [
+      {
+        resource: "posts",
+        params: `company=${company}`
+      }
+    ]
   })
 
   return {
       props : {
-          slug: slug
+        company: company
       },
       revalidate : 5
   }

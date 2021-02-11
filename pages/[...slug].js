@@ -9,7 +9,6 @@ import {
 } from 'eventjuicer-site-components';
 
 import Head from 'next/head'
-
 import settings from '../settings';
 
 const PageCompany = ({id}) => {
@@ -67,7 +66,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
           id :id
       },
-      revalidate : 1
+      revalidate : 10
   }
 
 })
