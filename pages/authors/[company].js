@@ -55,7 +55,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
       props : {
         company: company
       },
-      revalidate : 5
+      revalidate : 30
   }
 
 })

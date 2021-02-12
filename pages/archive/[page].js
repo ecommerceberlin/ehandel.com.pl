@@ -53,7 +53,7 @@ import {
         props : {
             page: page
         },
-        revalidate : 5
+        revalidate : 30
     }
   
   })

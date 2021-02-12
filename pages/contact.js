@@ -23,7 +23,7 @@ import {
 
     return {
       props: {}, 
-      revalidate: 3
+      revalidate: 30
     }
     
   })
