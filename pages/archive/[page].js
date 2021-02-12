@@ -37,13 +37,16 @@ import {
   }
 
   
-  export const getStaticProps = reduxWrapper.getStaticProps(async ({ store, params }) => {
+  export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   
-    const {page} = params;
+    const {page} = props.params;
   
-    await configure(store, {
+    await configure(props, {
       settings : settings,
-      preload : [`posts?page=${page}`]
+      preload : [{
+        resource: "posts",
+        params: { page: page}
+      }]
     })
 
     return {

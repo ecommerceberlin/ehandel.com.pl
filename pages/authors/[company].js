@@ -46,7 +46,7 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     preload : [
       {
         resource: "posts",
-        params: `company=${company}`
+        params: { company: company}
       }
     ]
   })

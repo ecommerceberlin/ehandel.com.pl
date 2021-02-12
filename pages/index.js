@@ -38,7 +38,10 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   
   await configure(props, {
     settings: settings,
-    preload: ["posts?page=1"]
+    preload: [ {
+      resource: "posts",
+      params: { page: 1}
+    }]
   })
 
   return {props: {}, revalidate: 1}

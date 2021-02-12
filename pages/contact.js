@@ -3,8 +3,7 @@ import {
     connect,
     Wrapper,
     reduxWrapper,
-    configure,
-    WidgetPosts
+    configure
   } from 'eventjuicer-site-components';
   
   
@@ -16,8 +15,6 @@ import {
     <React.Fragment>
   
   <Wrapper first>
-  
- 
 
   </Wrapper>
    
@@ -25,21 +22,17 @@ import {
    
   ) 
   
-  export const getStaticProps = reduxWrapper.getStaticProps(async ({ store }) => {
+  export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   
-    await configure(store, {
+    await configure(props, {
       settings: settings,
-      preload: [{
-        // resource: "",
-        params: {
-          company_id: 1216
-        }
-      }]
+      preload: []
     })
 
-    return {props: {
-      
-    }, revalidate: 3}
+    return {
+      props: {}, 
+      revalidate: 3
+    }
     
   })
   

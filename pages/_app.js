@@ -47,6 +47,9 @@ const MyCustomApp = (props) => <NextApp {...props}
     head={
         <MyHead 
             url="/" 
+            titleLabel="og_title"
+            descriptionLabel="og_description"
+            image=""
             font="family=Roboto&family=Titillium+Web:ital,wght@0,600;0,700;1,400">{(data) => <Head>{data}</Head>}</MyHead> 
     }
     theme={customTheme}

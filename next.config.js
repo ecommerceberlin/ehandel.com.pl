@@ -13,4 +13,13 @@ module.exports = withTM({
       defaultLocale: 'pl',
       localeDetection: false
     },
+
+    async rewrites() { return [
+        {
+          source: '/kontakt',
+          destination: '/contact',
+        },
+      ]
+    },
+
 });
