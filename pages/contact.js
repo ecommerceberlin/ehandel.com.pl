@@ -10,16 +10,8 @@ import {
   import settings from '../settings'
   
   const PageIndex = (props) => (
-  
-   
-    <React.Fragment>
-  
-  <Wrapper first>
-
+  <Wrapper first color="transparent">
   </Wrapper>
-   
-    </React.Fragment>
-   
   ) 
   
   export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {

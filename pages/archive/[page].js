@@ -31,7 +31,7 @@ import {
     return {
     
       paths: [],
-      fallback: true //do not throw 404 when not cached....
+      fallback: "blocking" //do not throw 404 when not cached....
     };
      
   }
