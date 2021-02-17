@@ -2,7 +2,7 @@ const settings =  {
     
     system : {
 
-        maintenance: true,
+     //   maintenance: true,
 
         lang_api_endpoint : 'https://localise.biz/api/export/all.json?format=multi&key=R_9v_VaDNTKxZwL_GALhXdy_r9APBSUJ',
         available_locales : ["pl"],
@@ -143,7 +143,7 @@ const settings =  {
                 langs : ["pl","en"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1598009850/targiehandlu_people_km.jpg',
                 phone: '+48 721 945 134',
-                email: 'karolina.michalak@targiehandlu.pl',
+                email: 'hello@targiehandlu.pl',
                 chatlio : true
             },
           
@@ -161,7 +161,7 @@ const settings =  {
 
     appbar : {
         links: [
-            {label: "common.targiehandlu", color: "primary",  href: "https://targiehandlu.pl", as: "/covid19", variant: "contained"}
+            {label: "common.targiehandlu", color: "secondary",  href: "https://targiehandlu.pl", variant: "text"}
         ],
     },
 
