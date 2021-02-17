@@ -32,8 +32,13 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
   await configure(props, {
     settings: settings,
     preload: [ {
+      resource: "posts"
+    },{ 
       resource: "posts",
-      params: { page: 1}
+      params: { 
+        is_promoted: 1
+      }},{
+      resource: "publishers"
     }]
   })
 
