@@ -4,7 +4,9 @@ import {
   configure,
   reduxWrapper,
   Wrapper,
-  WidgetPosts
+  WidgetPosts,
+  TwoColsLayout as Section,
+  WidgetPublisher
 } from 'eventjuicer-site-components';
 
 import Head from 'next/head'
@@ -15,7 +17,15 @@ const PageCompany = ({company}) => {
   
 return (
   <Wrapper first color="transparent">
+  
+    <Section
+  left={
     <WidgetPosts company={company} label="posts.company" />
+  }
+  // right={ <WidgetPublisher company={company} />}
+  leftSize={7}
+/>
+
   </Wrapper>
 );
 
