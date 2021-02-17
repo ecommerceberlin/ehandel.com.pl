@@ -161,7 +161,7 @@ const settings =  {
 
     appbar : {
         links: [
-            {label: "common.targiehandlu", color: "primary",  href: "https://targiehandlu.pl", as: "/covid19", variant: "contained"}
+            {label: "common.targiehandlu", color: "secondary",  href: "https://targiehandlu.pl", variant: "text"}
         ],
     },
 
