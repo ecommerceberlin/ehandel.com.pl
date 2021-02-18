@@ -22,7 +22,7 @@ return (
   left={
     <WidgetPosts company={company} label="posts.company" />
   }
-  // right={ <WidgetPublisher company={company} />}
+  right={ <WidgetPublisher company={company} />}
   leftSize={7}
 />
 

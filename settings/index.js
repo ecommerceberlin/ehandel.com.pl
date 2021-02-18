@@ -118,7 +118,7 @@ const settings =  {
         organizer_name : 'Infoguru Sp. z o.o. Sp. k.',
         organizer_address : 'POLAND, Poznań, Truskawiecka 13',
         organizer_regno : 'VAT ID 7811967834',
-        event_name : 'ehandel',
+        event_name : 'EHANDEL',
         event_location : '',
         event_date : '',
         event_hours : '',
