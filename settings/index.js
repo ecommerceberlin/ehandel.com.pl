@@ -143,7 +143,7 @@ const settings =  {
                 langs : ["pl","en"],
                 avatar: 'https://res.cloudinary.com/eventjuicer/image/upload/v1598009850/targiehandlu_people_km.jpg',
                 phone: '+48 721 945 134',
-                email: 'hello@targiehandlu.pl',
+                email: 'redakcja@ehandel.com.pl',
                 chatlio : true
             },
           
