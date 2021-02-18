@@ -50,14 +50,15 @@ export async function getStaticPaths() {
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   const {company} = props.params;
-
+  const publisher = `publishers/${company}`
   await configure(props, {
     settings : settings,
     preload : [
       {
         resource: "posts",
         params: { company: company}
-      }
+      },
+      publisher
     ]
   })
 
