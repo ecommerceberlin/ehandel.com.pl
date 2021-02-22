@@ -15,7 +15,7 @@ const PageCompany = ({id}) => {
   
   return (
         <>
-        <HeadPost id={id} key={id}>{(data) => <Head key={id}>{data}</Head>}</HeadPost> 
+        <HeadPost>{(data) => <Head>{data}</Head>}</HeadPost> 
         <WidgetPost id={id} />
         </>
    );
@@ -45,10 +45,10 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   if(!matches){
     return {
-      // redirect: {
-      //   destination: "/",
-      //   permanent: false,
-      // },
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
       props: {}
     }
   }
