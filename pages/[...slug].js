@@ -41,14 +41,14 @@ export async function getStaticPaths() {
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   const {slug} = props.params;
-  const matches = /[^,]+,(?<id>[0-9]+)/g.exec(slug)
+  const matches = /^[^,]+,(?<id>[0-9]+)$/.exec(slug)
 
   if(!matches){
     return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
+      // redirect: {
+      //   destination: "/",
+      //   permanent: false,
+      // },
       props: {}
     }
   }
