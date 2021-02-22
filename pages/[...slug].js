@@ -15,7 +15,7 @@ const PageCompany = ({id}) => {
   
   return (
         <>
-        <HeadPost id={id}>{(data) => <Head>{data}</Head>}</HeadPost> 
+        <HeadPost id={id} key={id}>{(data) => <Head key={id}>{data}</Head>}</HeadPost> 
         <WidgetPost id={id} />
         </>
    );
