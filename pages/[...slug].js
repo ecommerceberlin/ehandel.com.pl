@@ -15,7 +15,7 @@ const PageCompany = ({id}) => {
   
   return (
         <>
-        <HeadPost id={id} key={id}>{(data) => <Head key={id}>{data}</Head>}</HeadPost> 
+        <HeadPost id={id}>{(data) => <Head>{data}</Head>}</HeadPost> 
         <WidgetPost id={id} />
         </>
    );
@@ -41,7 +41,7 @@ export async function getStaticPaths() {
 export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   const {slug} = props.params;
-  const matches = /[^,]+,(?<id>[0-9]+)/g.exec(slug)
+  const matches = /^[^,]+,(?<id>[0-9]+)$/.exec(slug)
 
   if(!matches){
     return {
@@ -53,7 +53,8 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
     }
   }
 
-  const {id} = matches.groups;
+
+  const {groups: {id}} = matches;
 
   const post = `posts/${id}`;
 
