@@ -45,10 +45,10 @@ export const getStaticProps = reduxWrapper.getStaticProps(async (props) => {
 
   if(!matches){
     return {
-      redirect: {
-        destination: "/",
-        permanent: false,
-      },
+      // redirect: {
+      //   destination: "/",
+      //   permanent: false,
+      // },
       props: {}
     }
   }
