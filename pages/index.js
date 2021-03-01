@@ -17,7 +17,11 @@ const PageIndex = (props) => (
    <WidgetPostsFeatured />
     <Section
   left={
-    <WidgetPosts />
+    <WidgetPosts 
+    // insert={ 
+    //   <WidgetPostsFeatured skip={4} secondary={true} bottom={10} top={10} /> 
+    // } 
+    insertPos={4} />
   }
   right={
     <WidgetPublishers />
