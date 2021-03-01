@@ -7,7 +7,7 @@ const settings =  {
         lang_api_endpoint : 'https://api.eventjuicer.com/proxy?url=https%3A%2F%2Flocalise.biz%2Fapi%2Fexport%2Fall.json%3Fformat%3Dmulti%26key%3DR_9v_VaDNTKxZwL_GALhXdy_r9APBSUJ',
         available_locales : ["pl"],
         default_locale : "pl",
-        api : "https://api.eventjuicer.com/v1/public/hosts/targiehandlu.pl",
+        api : "https://api.eventjuicer.com/proxy?url=https://api.eventjuicer.com/v1/public/hosts/targiehandlu.pl",
         og_image : "https://res.cloudinary.com/ecommerceberlin/image/upload/c_limit,w_1024/v1546943854/ebe_og_home.jpg",
     
     },
