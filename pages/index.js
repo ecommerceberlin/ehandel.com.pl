@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   connect,
   Wrapper,
@@ -13,15 +14,28 @@ import settings from '../settings'
 
 const PageIndex = (props) => (
 
-<Wrapper first color="transparent">
-   <WidgetPostsFeatured />
+<Wrapper dense={true} color="transparent">
+   <WidgetPostsFeatured top={0} />
     <Section
-  left={
-    <WidgetPosts 
-    insert={ 
+      left={
+      <>
+      <WidgetPosts 
+      insert={ 
       <WidgetPostsFeatured skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} /> 
-    } 
-    insertPos={10} />
+      } 
+      insertPos={10} 
+    />
+
+    <WidgetPosts 
+      // insert={ 
+      //   <WidgetPostsFeatured skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} /> 
+      // } 
+      // insertPos={10} 
+      label={null}
+      page={2}
+    />
+
+    </>
   }
   right={
     <WidgetPublishers />
