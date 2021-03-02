@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ecommerceberlin/ehandel.com.pl#readme",
   "dependencies": {
-    "eventjuicer-site-components": "3.1.5",
+    "eventjuicer-site-components": "3.1.6",
     "next": "10.0.6",
     "next-transpile-modules": "^6.3.0",
     "react": "^17.0.1",
