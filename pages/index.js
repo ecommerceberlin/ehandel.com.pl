@@ -18,10 +18,10 @@ const PageIndex = (props) => (
     <Section
   left={
     <WidgetPosts 
-    // insert={ 
-    //   <WidgetPostsFeatured skip={4} secondary={true} bottom={10} top={10} /> 
-    // } 
-    insertPos={4} />
+    insert={ 
+      <WidgetPostsFeatured skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} /> 
+    } 
+    insertPos={10} />
   }
   right={
     <WidgetPublishers />
