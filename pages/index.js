@@ -20,17 +20,13 @@ const PageIndex = (props) => (
       left={
       <>
       <WidgetPosts 
-      insert={ 
-      <WidgetPostsFeatured skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} /> 
-      } 
-      insertPos={10} 
+      inserts={{
+        7: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        14: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+      }}
     />
 
     <WidgetPosts 
-      // insert={ 
-      //   <WidgetPostsFeatured skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} /> 
-      // } 
-      // insertPos={10} 
       label={null}
       page={2}
     />
