@@ -7,7 +7,8 @@ import {
   WidgetPosts,
   TwoColsLayout as Section,
   WidgetPostsFeatured,
-  WidgetPublishers
+  WidgetPublishers,
+  WidgetRoleButtons
 } from 'eventjuicer-site-components';
 
 import settings from '../settings'
@@ -21,8 +22,9 @@ const PageIndex = (props) => (
       <>
       <WidgetPosts 
       inserts={{
-        7: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
-        14: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+        4: <WidgetRoleButtons />,
+        8: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        15: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
       }}
     />
 

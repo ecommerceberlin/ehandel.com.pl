@@ -127,9 +127,19 @@ const settings =  {
 
    
 
-    customer_support : {
-
+    rolebuttons : {
+        accent : "gold",
+        height: 400,
+        items : [
+        {
+          url: 'https://res.cloudinary.com/eventjuicer/image/upload/f_auto/v1615587977/vlcsnap-2021-03-12-23h24m53s629.jpg',
+          label: 'seeother.targiehandlu',
+        //   width: '50%',
+          target : "https://targiehandlu.pl/"
+        },
+        ]
     },
+
 
     sales_support : {
 
