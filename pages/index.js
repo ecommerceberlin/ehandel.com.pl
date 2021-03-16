@@ -22,15 +22,19 @@ const PageIndex = (props) => (
       <>
       <WidgetPosts 
       inserts={{
-        4: <WidgetRoleButtons />,
+        3: <WidgetRoleButtons />,
         8: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
-        15: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+        13: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
       }}
     />
 
     <WidgetPosts 
       label={null}
       page={2}
+      inserts={{
+        0: <WidgetPostsFeatured limit={2} skip={8} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        7: <WidgetPostsFeatured limit={2} skip={10} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+      }}
     />
 
     </>
