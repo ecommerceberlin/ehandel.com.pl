@@ -22,9 +22,10 @@ const PageIndex = (props) => (
       <>
       <WidgetPosts 
       inserts={{
-        3: <WidgetRoleButtons />,
-        8: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
-        13: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+        5: <WidgetPostsFeatured limit={2} skip={4} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        9: <WidgetPostsFeatured limit={2} skip={6} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        13: <WidgetPostsFeatured limit={2} skip={8} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        17: <WidgetPostsFeatured limit={2} skip={10} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
       }}
     />
 
@@ -32,8 +33,10 @@ const PageIndex = (props) => (
       label={null}
       page={2}
       inserts={{
-        0: <WidgetPostsFeatured limit={2} skip={8} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
-        7: <WidgetPostsFeatured limit={2} skip={10} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
+        1: <WidgetPostsFeatured limit={2} skip={12} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        5: <WidgetPostsFeatured limit={2} skip={14} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        9: <WidgetPostsFeatured limit={2} skip={16} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />,
+        13: <WidgetPostsFeatured limit={2} skip={18} secondary={true} bottom={15} top={15} spacing={2} maxPerRow={2} />
       }}
     />
 
