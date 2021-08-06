@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ecommerceberlin/ehandel.com.pl#readme",
   "dependencies": {
+    "@sentry/nextjs": "^6.10.0",
     "eventjuicer-site-components": "3.5.6",
     "next": "10.0.8",
     "next-transpile-modules": "^6.4.0",
@@ -35,9 +36,9 @@
   },
   "devDependencies": {
     "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-config-airbnb": "^18.2.1",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "react-is": "^17.0.2"
